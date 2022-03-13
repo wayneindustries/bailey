@@ -1,0 +1,103 @@
+body {
+    background-color: black;
+    color: #FF10F0;
+    margin: 0;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 14px !important;
+  }
+  
+  .container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: flex-start;
+    min-height: 100vh;
+    top: 5px;
+    left: 5px;
+  }
+  
+  h1 {
+      margin: 0;
+      font-size: 14px !important;
+  }
+
+  .text {
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 14px !important;
+  }
+  
+  .textclass {
+    color: #FF10F0;
+    font-size: 14px !important;
+  }
+
+  .t1,
+  .t2,
+  .prompt.p2 {
+      display: none;
+  }
+  
+  .t1.active {
+    margin: 0;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: type 2s steps(20, end), curser1 0.8s 4;
+    border-right: 8px solid transparent;
+    animation-delay: 0s;
+    transition: 0.5s;
+    font-size: 14px !important;
+  }
+  
+  .t2.active {
+    margin: 0;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: type 2s steps(19, end), curser 0.8s infinite;
+    border-right: 8px solid #FF10F0;
+    animation-fill-mode: both;
+    animation-delay: 0s;
+    font-size: 14px !important;
+  }
+  
+  .t1:active {
+    border-right: 8px solid transparent;
+  }
+  
+  @keyframes type {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+  
+  @keyframes curser {
+    0% {
+      border-color: transparent;
+    }
+    50% {
+      border-color: #FF10F0;
+    }
+    100% {
+      border-color: transparent;
+    }
+  }
+  
+  @keyframes curser1 {
+    0% {
+      border-color: transparent;
+    }
+    50% {
+      border-color: #FF10F0;
+    }
+    100% {
+      border-color: transparent;
+    }
+  }
+  
