@@ -36,7 +36,6 @@ function speak(str) {
     var msg = new SpeechSynthesisUtterance(str);
     msg.rate = 1;
     msg.pitch = 3;
-    msg.voice = this.getVoices()[4];
-    voices = this.getVoices();
+    msg.voice = msg.getVoices()[4];
     window.speechSynthesis.speak(msg);
 }
