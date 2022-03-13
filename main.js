@@ -35,6 +35,6 @@ function init() {
 function speak(str) {
     var msg = new SpeechSynthesisUtterance(str);
     msg.rate = 0.5;
-    msg.pitch = 0.5;
+    msg.pitch = 2;
     window.speechSynthesis.speak(msg);
 }
