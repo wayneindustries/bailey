@@ -22,11 +22,11 @@ function init() {
                 $('.t2').addClass('ready');
             }, 5000);
         }
-        if (click == 2 && $('.t2').hasClass('ready')) {
+        if (click > 1 && $('.t2').hasClass('ready')) {
             $('.t2').addClass('active');
             speak('drink your milk');
             setTimeout(function () {
-                window.location = "https://youtu.be/mhJhQddBEBU?t=3";
+                window.location = "https://youtu.be/XqZsoesa55w?t=27";
             }, 5000);
         }
     });
