@@ -16,7 +16,7 @@ function init() {
         click++;
         if (click == 1) {
             $('.t1').addClass('active');
-            speak('Hello Nicole');
+            speak('Hello Bailey');
             setTimeout(function () {
                 $('.p2').show();
                 $('.t2').addClass('ready');
@@ -24,7 +24,7 @@ function init() {
         }
         if (click == 2 && $('.t2').hasClass('ready')) {
             $('.t2').addClass('active');
-            speak('Happy Birthday idiot');
+            speak('drink your milk');
             setTimeout(function () {
                 window.location = "https://youtu.be/mhJhQddBEBU?t=3";
             }, 5000);
